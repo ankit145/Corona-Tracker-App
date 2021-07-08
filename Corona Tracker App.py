@@ -18,7 +18,7 @@ def getCovidData():
     today_recovered = str(json_data['todayRecovered'])
     updated_at = json_data['updated']
     date = datetime.datetime.fromtimestamp(updated_at/1e3)
-    label.config(text = "total Cases: "+total_cases +" "\n" Total deaths: "+total_deaths +", Total Cases: " +total_cases +", Today Deaths: "+today_deaths +", Today Recovered: "+today_recovered)
+    label.config(text = "total Cases: "+total_cases +" Total deaths: "+total_deaths +", Total Cases: " +total_cases +", Today Deaths: "+today_deaths +", Today Recovered: "+today_recovered)
     
     
 
